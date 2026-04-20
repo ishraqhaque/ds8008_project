@@ -9,18 +9,18 @@ Zero-ablation of individual components, scored by **logit difference** on counte
 ## Structure
 
 ```
-├── knowledge_circuits.ipynb      Main report notebook
+├── knowledge_circuits.ipynb              Main report notebook
 ├── data/
-│   ├── facts.json                                                Filtered subset of CounterFact (1000 candidates)
-      └── ims_country_capital_city_0.01            Contains the Output files when running original code
+│   ├── facts.json                        Filtered subset of CounterFact (1000 candidates)
+│   └── ims_country_capital_city_0.01     Contains the Output files when running original code
 ├── src/
-│   ├── model_utils.py                                        Model loading, logit-difference, fact filtering
-│   ├── ablation.py                                              Head and MLP zero-ablation hooks + sweep loops
-│   └── visualization.py                                       Heatmap and bar-chart plotting
-├── tests/                                                             Pytest tests for model_utils and ablation
+│   ├── model_utils.py                    Model loading, logit-difference, fact filtering
+│   ├── ablation.py                       Head and MLP zero-ablation hooks + sweep loops
+│   └── visualization.py                  Heatmap and bar-chart plotting
+├── tests/                                Pytest tests for model_utils and ablation
 ├── scripts/
-│   └── build_dataset.py                                   Rebuild data/facts.json from HuggingFace
-├── requirements.txt 
+│   └── build_dataset.py                  Rebuild data/facts.json from HuggingFace
+├── requirements.txt
 └── README.md
 ```
 
